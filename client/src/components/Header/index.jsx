@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import styles from './style.module.scss';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
@@ -36,7 +37,7 @@ export default function index() {
         <>
         <div ref={header} className={styles.header}>
             <Magnetic>
-                <div className={styles.logo}>
+                <div className={styles.logo} onClick={() => window.location.href = '/'} style={{cursor: 'pointer'}}>
                     <p className={styles.copyright}>©</p>
                     <div className={styles.name}>
                         <p className={styles.codeBy}>Code by</p>
@@ -48,19 +49,19 @@ export default function index() {
             <div className={styles.nav}>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Work</a>
+                        <Link href="/work">Work</Link>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>About</a>
+                        <Link href="/about">About</Link>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Contact</a>
+                        <Link href="/contact">Contact</Link>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>

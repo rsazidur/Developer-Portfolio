@@ -45,7 +45,6 @@
             width: 65px;
             height: 65px;
             flex-shrink: 0;
-            perspective: 1500px;
             box-shadow: 
                 inset -12px -12px 24px rgba(0,0,0,0.5), 
                 inset 6px 6px 12px rgba(255,255,255,0.5), 
@@ -79,25 +78,7 @@
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    
-    @keyframes bobbleGlobe {
-        0% {
-            transform: translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-        }
-        25% {
-            transform: translateY(-8px) translateX(3px) rotateX(25deg) rotateY(72deg) rotateZ(8deg);
-        }
-        50% {
-            transform: translateY(0px) translateX(0px) rotateX(15deg) rotateY(144deg) rotateZ(12deg);
-        }
-        75% {
-            transform: translateY(-8px) translateX(-3px) rotateX(-15deg) rotateY(216deg) rotateZ(8deg);
-        }
-        100% {
-            transform: translateY(0px) rotateX(0deg) rotateY(360deg) rotateZ(0deg);
-        }
-    }
-    
+  
     .sliderContainer{
       position: absolute;
       top: calc(100vh - 350px);
