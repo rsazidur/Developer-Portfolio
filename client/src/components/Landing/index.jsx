@@ -57,11 +57,13 @@ export default function Home() {
           <p>Bangladesh</p>
         </div>
         <div className={styles.globe}>
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className={styles.globeInner}>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.globeSvg}>
             <circle cx="14" cy="14" r="10.5" stroke="white" strokeWidth="1.2"/>
             <ellipse cx="14" cy="14" rx="5" ry="10.5" stroke="white" strokeWidth="1.2"/>
             <path d="M14 3.5V24.5M3.5 14H24.5M6.5 8.5H21.5M6.5 19.5H21.5M9.5 6H18.5M9.5 22H18.5" stroke="white" strokeWidth="1.2" strokeLinecap="round"/>
           </svg>
+          </div>
         </div>
       </div>
       
