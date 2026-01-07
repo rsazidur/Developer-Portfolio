@@ -49,8 +49,8 @@
             .button{
                 width: 180px;
                 height: 180px;
-                background-color: #455CE9;
-                color: white;
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
                 border-radius: 50%;
                 position: absolute;
                 display: flex;
@@ -97,7 +97,7 @@
                         content: "";
                         width: 0%;
                         height: 1px;
-                        background-color: white;
+                        background-color: #ff004c;
                         display: block;
                         margin-top: 2px;
                         position: relative;
